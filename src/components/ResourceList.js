@@ -20,12 +20,10 @@ const ResourceList = ({ resource }) => {
     
     return (
         // Display list
-        <div>
-            <ul>
-                {resources.map(record => (
-                    <li key={record.id}>{record.title}</li>
-                ))}
-            </ul>
+        <div className="ui list">
+            {resources.map(record => (
+                <div className="item" key={record.id}>{record.title}</div>
+            ))}
         </div>
     )
 }

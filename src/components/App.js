@@ -8,11 +8,19 @@ const App = () => {
     const [resource, setResource] = useState('posts');
 
     return (
-        <div>
-            <p>React Hooks</p>
+        <div className="ui container masthead">
+            <h1 className="ui header">React Hooks</h1>
             <div>
-                <button onClick={() => setResource('posts')}>Posts</button>
-                <button onClick={() => setResource('todos')}>Todos</button>
+                <button 
+                    onClick={() => setResource('posts')}
+                    className="ui primary button">
+                    Posts
+                </button>
+                <button 
+                    onClick={() => setResource('todos')}
+                    className="ui primary button">
+                    Todos
+                </button>
             </div>
             
             <ResourceList resource={resource} />
