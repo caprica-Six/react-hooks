@@ -1,12 +1,15 @@
 ### This project covers React and React Hooks
 #### React Hooks
+
+#### use `useState` to allow a funcitonal component to use component-level state
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 |-- react-hooks
     |-- src
         |-- components
         |-- App.js
     |-- index.js
-
-
+</code></pre></div></div>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
