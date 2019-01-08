@@ -1,7 +1,7 @@
 ### This project covers React and React Hooks
 #### React Hooks
 
-#### use `useState` to allow a funcitonal component to use component-level state
+#### use `useState` to allow a functional component to use component-level state
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 |-- react-hooks
