@@ -16,7 +16,7 @@ const ResourceList = ({ resource }) => {
     // get access to life-cycle methods with useEffect()
     useEffect(() => {
         fetchResource(resource);        
-    }, [])
+    }, [resource]);
     
     return (
         // Test number of resources fetched
