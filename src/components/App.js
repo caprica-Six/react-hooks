@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ResourceList from "./ResourceList";
+import UserList from "./UserList";
 
 const App = () => {
     // array destructuring
@@ -10,6 +11,7 @@ const App = () => {
     return (
         <div className="ui container masthead">
             <h1 className="ui header">React Hooks</h1>
+            <UserList />
             <div>
                 <button 
                     onClick={() => setResource('posts')}
