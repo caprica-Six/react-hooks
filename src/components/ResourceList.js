@@ -19,8 +19,14 @@ const ResourceList = ({ resource }) => {
     
     
     return (
-        // Test number of resources fetched
-        <div>{resources.length}</div>
+        // Display list
+        <div>
+            <ul>
+                {resources.map(record => (
+                    <li key={record.id}>{record.title}</li>
+                ))}
+            </ul>
+        </div>
     )
 }
 
