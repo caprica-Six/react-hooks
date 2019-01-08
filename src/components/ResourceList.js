@@ -1,8 +1,9 @@
 import React, {useState, useEffect } from 'react'
 import axios from "axios";
 
-const ResourceList = ({ resource }) => {
-    // have access to the initial state resources on const resources
+// Code reuse - useResources function can be re-used anywhere in the project
+const useResources = (resource) => {
+     // have access to the initial state resources on const resources
     // can be changed using setResources()
     // initial value of empty array
     const [resources, setResources] = useState([]); 
@@ -16,7 +17,13 @@ const ResourceList = ({ resource }) => {
         })(resource);
         }, [resource]
     );
-    
+
+    return resources;
+}
+
+
+const ResourceList = ({ resource }) => {
+   const resources = useResources(resource);
     
     return (
         // Display list
