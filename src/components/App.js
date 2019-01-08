@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ResourceList from "./ResourceList";
 
 const App = () => {
     // array destructuring
@@ -14,7 +15,7 @@ const App = () => {
                 <button onClick={() => setResource('totos')}>Todos</button>
             </div>
             
-            {resource}
+            <ResourceList resource={resource} />
         </div>
     )
 }
